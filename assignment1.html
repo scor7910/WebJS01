@@ -15,13 +15,13 @@
 
   <div id="Metric" class="tabcontent">
     <form>
-    <pre><h3>Gender     <select class = "Assignment1-Control" name="gender" id="gender">
+    <pre><h3>Gender     <select class = "Assignment1-Control" name="gender" id="genderM">
                         <option value="female">Female</option>
                         <option value="male">Male</option>
                         </select></pre></h3>
-    <pre><h3>Age        <input class="Assignment1-Control" type="number" name="age" id="age" width="200"></h3></pre>
-    <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="height" width="200">Cm</h3></pre>
-    <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weight" width="200">Kg</h3></pre>
+    <pre><h3>Age        <input class="Assignment1-Control" type="number" name="age" id="ageM" width="200"></h3></pre>
+    <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="heightM" width="200">Cm</h3></pre>
+    <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weightM" width="200">Kg</h3></pre>
   <center>
     <button class = "Assignment1-Control" onclick="return calculateBMRInMetric()">Calculate</button>
     <input class = "Assignment1-Control" type="reset" name="clear" value="Clear"/>
@@ -30,14 +30,14 @@
   </div>
 
   <div id="Imperial" class="tabcontent">
-    <form onsubmit ="calculateBMRInImperial()">
-    <prex><h3>Gender     <select class = "Assignment1-Control" name="gender" id="gender">
+    <form >
+    <pre><h3>Gender     <select class = "Assignment1-Control" name="gender" id="genderI">
                         <option value="female">Female</option>
                         <option value="male">Male</option>
-                        </select></prex></h3>
-    <pre><h3>Age        <input class="Assignment1-Control" type="number" name="age" id="age" width="200"></h3></pre>
-    <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="height" width="200">Inch</h3></pre>
-    <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weight" width="200">Pound</h3></pre>
+                        </select></pre></h3>
+    <pre><h3>Age        <input class="Assignment1-Control" type="number" name="age" id="ageI" width="200"></h3></pre>
+    <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="heightI" width="200">Inch</h3></pre>
+    <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weightI" width="200">Pound</h3></pre>
     <center>
       <button class="Assignment1-Control" onclick="return calculateBMRInImperial()">Calculate</button>
       <input class = "Assignment1-Control" type="reset" name="clear" value="Clear"/>
