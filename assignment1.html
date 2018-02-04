@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -23,26 +23,29 @@
     <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="height" width="200">Cm</h3></pre>
     <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weight" width="200">Kg</h3></pre>
   <center>
-    <input class = "Assignment1-Control" type="submit" name="submit" value="submit">
-    <input class = "Assignment1-Control" type="reset" name="clear" value="Clear">
+    <button class = "Assignment1-Control" onclick="return calculateBMRInMetric()">Calculate</button>
+    <input class = "Assignment1-Control" type="reset" name="clear" value="Clear"/>
   </center>
 </form>
   </div>
 
   <div id="Imperial" class="tabcontent">
-    <form>
-    <pre><h3>Gender     <select class = "Assignment1-Control" name="gender" id="gender">
+    <form onsubmit ="calculateBMRInImperial()">
+    <prex><h3>Gender     <select class = "Assignment1-Control" name="gender" id="gender">
                         <option value="female">Female</option>
                         <option value="male">Male</option>
-                        </select></pre></h3>
+                        </select></prex></h3>
     <pre><h3>Age        <input class="Assignment1-Control" type="number" name="age" id="age" width="200"></h3></pre>
     <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="height" width="200">Inch</h3></pre>
     <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weight" width="200">Pound</h3></pre>
     <center>
-      <input class = "Assignment1-Control" type="submit" name="submit" value="submit">
-      <input class = "Assignment1-Control" type="reset" name="clear" value="Clear">
+      <button class="Assignment1-Control" onclick="return calculateBMRInImperial()">Calculate</button>
+      <input class = "Assignment1-Control" type="reset" name="clear" value="Clear"/>
     </center>
   </form>
   </div>
+    <div id="bmrResult" class="tabcontent" style="display:none">
+       
+    </div>
 </body>
 </html>
