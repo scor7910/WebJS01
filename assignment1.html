@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Ryun Ghi Kim">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script type="text/javascript" src="./script/assignment1.js"></script>
+  <title>Assignment 1</title>
+</head>
+<body onload="document.getElementById('defaultOpen').click();">
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Metric')" id="defaultOpen">Metric BMR Calculator</button>
+    <button class="tablinks" onclick="openTab(event, 'Imperial')">Imperial BMR Calculator</button>
+  </div>
+
+  <div id="Metric" class="tabcontent">
+    <form>
+    <pre><h3>Gender     <select class = "Assignment1-Control" name="gender" id="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        </select></pre></h3>
+    <pre><h3>Age        <input class="Assignment1-Control" type="number" name="age" id="age" width="200"></h3></pre>
+    <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="height" width="200">Cm</h3></pre>
+    <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weight" width="200">Kg</h3></pre>
+  <center>
+    <input class = "Assignment1-Control" type="submit" name="submit" value="submit">
+    <input class = "Assignment1-Control" type="reset" name="clear" value="Clear">
+  </center>
+</form>
+  </div>
+
+  <div id="Imperial" class="tabcontent">
+    <form>
+    <pre><h3>Gender     <select class = "Assignment1-Control" name="gender" id="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        </select></pre></h3>
+    <pre><h3>Age        <input class="Assignment1-Control" type="number" name="age" id="age" width="200"></h3></pre>
+    <pre><h3>Height     <input class="Assignment1-Control" type="number" name="height" id="height" width="200">Inch</h3></pre>
+    <pre><h3>Weight     <input class="Assignment1-Control" type="number" name="weight" id="weight" width="200">Pound</h3></pre>
+    <center>
+      <input class = "Assignment1-Control" type="submit" name="submit" value="submit">
+      <input class = "Assignment1-Control" type="reset" name="clear" value="Clear">
+    </center>
+  </form>
+  </div>
+</body>
+</html>
